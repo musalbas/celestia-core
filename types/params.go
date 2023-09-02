@@ -12,10 +12,10 @@ import (
 
 const (
 	// MaxBlockSizeBytes is the maximum permitted size of the blocks.
-	MaxBlockSizeBytes = 104857600 // 100MB
+	MaxBlockSizeBytes = 1024 * 1024 * 1024 // 1GB
 
 	// BlockPartSizeBytes is the size of one block part.
-	BlockPartSizeBytes uint32 = 65536 // 64kB
+	BlockPartSizeBytes uint32 = 1024 * 1024 // 1MB
 
 	// MaxBlockPartsCount is the maximum number of block parts.
 	MaxBlockPartsCount = (MaxBlockSizeBytes / BlockPartSizeBytes) + 1
